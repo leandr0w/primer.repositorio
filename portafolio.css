@@ -17,6 +17,7 @@ body {
     position: fixed;
     line-height: 80px;
     width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
 }
 .-nav {
     display: flex;
