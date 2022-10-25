@@ -8,8 +8,12 @@ html {
     margin: 0;
     padding: 0;
 }
+p {
+    color: #000000;
+}
 body {
     background-color: #fff;
+    padding: 90px 20px 0;
 }
 
 .header {
@@ -17,13 +21,17 @@ body {
     position: fixed;
     line-height: 80px;
     width: 100%;
+    top: 0;
+    left: 0;
     font-family: Helvetica, Arial, sans-serif;
 }
 .-nav {
+    
     display: flex;
     justify-content: center;
     list-style: none;
     text-decoration: none;
+    
 }
 
 a {
@@ -42,4 +50,76 @@ a {
 a:hover{
     background-color: #96ac60;
     transition: 0.6s;
+}
+.nav-btn {
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 20px;
+    float: right;
+    display: none;
+    text-align: right;
+    padding-left: ;
+}
+@media (max-width: 768px){
+    body {
+
+            padding-top: 70px;
+        
+         }   
+        .header { 
+            height: 60px;  
+        }
+        .-nav {
+            background-color: gray;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            text-decoration: none;
+            margin-right: 20px;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 60px);
+            overflow-y: auto;
+            left: 100%;
+            transition: left 0.3s;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            
+        }
+        .navitem {
+         
+            line-height: 70px;
+           
+        }
+        a:hover{
+            background: none;
+            color: #b7cd7f
+        }
+        .nav-btn {
+            color: #fff;
+            background: none;
+            border: none;
+            font-size: 20px;
+            padding: 20px;
+            float: right;
+            display: inline-flex;      
+        }
+        .nav-btn:active{
+            background-color: #b7cd7f;
+        }
+        .nav-visible{
+            left: 0;
+        }
+        p {
+            font-size: 20px
+        }
+    }
 }
